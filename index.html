@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="author" content="Mohammed Arif Mazeed Sikdar" />
+        <meta
+            name="description"
+            content="Running Competition according to the height and weight of the user."
+        />
+        <title>Running Competition</title>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <!--
+            =Header
+        -->
+        <header class="header">
+            <h1 class="header__h1">Running Competition</h1>
+            <nav class="header__nav">
+                <ul class="header__ul">
+                    <li><a href="#competition">Competition</a></li>
+                    <li><a href="#exercise">Exercise</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <!--
+            =Hero
+        -->
+        <section class="hero">
+            <div class="design-box design-box1"></div>
+            <h2 class="hero__h2">Compete with your Health!</h2>
+            <button class="primary-btn">Start Competition</button>
+            <div class="design-box design-box2"></div>
+        </section>
+
+        <!--
+            =Main
+        -->
+        <main class="main">
+            <!--
+                =Competition
+            -->
+            <article id="competition" class="main__article competition">
+                <h2 class="competition__h2">Competition</h2>
+                <button class="primary-btn">Start</button>
+
+                <!--
+                    =Competition User Form
+                -->
+                <form action="" method="get" class="competition__form">
+                    <fieldset class="competition__fieldset">
+                        <legend class=".legend">Your Info</legend>
+                        <p class="competition__p">
+                            <label for="name" class="competition__label">Name</label>
+                            <input
+                                type="text"
+                                name="name"
+                                id="name"
+                                placeholder="Your Name"
+                                required
+                                class="competition__input"
+                            />
+                        </p>
+                        <p class="competition__p">
+                            <label for="weight" class="competition__label">Weight</label>
+                            <input
+                                type="number"
+                                name="weight"
+                                id="weight"
+                                placeholder="Your Weight"
+                                required
+                                class="competition__input"
+                            />
+                        </p>
+                        <p class="competition__p">
+                            <label for="height" class="competition__label">Height</label>
+                            <input
+                                type="number"
+                                name="height"
+                                id="height"
+                                placeholder="Your Height"
+                                required
+                                class="competition__input"
+                            />
+                        </p>
+                    </fieldset>
+                    <button type="submit" class="form-btn competititon__btn">Submit</button>
+                    <button type="reset" class="form-btn competititon__btn">Reset</button>
+                </form>
+
+                <!--
+                    =Competition window
+                -->
+                <section class="competition__window">
+                    <div class="competition__computer-bar"></div>
+                    <p class="competition__result"></p>
+                    <div class="competition__user-bar"></div>
+                    <p class="competition__result-description"></p>
+                </section>
+            </article>
+
+            <!--
+                =Exercise
+            -->
+            <article id="exercise" class="main__article exercise">
+                <h2 class="exercise__h2">Do Exercise</h2>
+                <p class="exercise__situp"></p>
+                <p class="exercise__pushup"></p>
+            </article>
+        </main>
+
+        <!--
+            =Footer
+        -->
+        <footer class="footer">
+            <p>
+                <span class="nowrap">Copyright &copy; <time id="year"></time></span>
+                <span class="nowrap">Mohammed Arif Mazeed Sikdar</span>
+            </p>
+        </footer>
+    </body>
+</html>
